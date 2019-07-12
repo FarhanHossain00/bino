@@ -1257,8 +1257,9 @@ button:focus {
   position: relative;
   margin: 0;
   padding: 0;
-  overflow-y: hidden !important;
 }
+
+.blog-section .img-box{overflow: hidden;}
 
 .blog-section .blog-des {
   padding: 25px;
