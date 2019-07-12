@@ -2,11 +2,10 @@ $(document).ready(function () {
 
 
   //preloader
-  $(window).on("load", function () {
+ 
 
     $('.card').delay(600).fadeOut();
     $('.preloader').addClass('close').delay(3000).fadeOut();
-  });
 
   //navbar
   $('.navbar .navbar-nav li a').click(function () {
