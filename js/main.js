@@ -1,12 +1,7 @@
 $(document).ready(function () {
 
 
-  //preloader
  
-
-    $('.card').delay(600).fadeOut();
-    $('.preloader').addClass('close').delay(3000).fadeOut();
-
   //navbar
   $('.navbar .navbar-nav li a').click(function () {
     $('.navbar .navbar-collapse').removeClass('show')
