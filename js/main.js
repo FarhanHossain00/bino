@@ -1,11 +1,17 @@
 $(document).ready(function () {
 
 
- 
+  //preloader
+
+
+  $('.card').delay(600).fadeOut();
+  $('.preloader').addClass('close').delay(3000).fadeOut();
+
   //navbar
+
   $('.navbar .navbar-nav li a').click(function () {
     $('.navbar .navbar-collapse').removeClass('show')
-  })
+  });
 
   //==============================
   // smooth scroll
@@ -25,7 +31,7 @@ $(document).ready(function () {
   $('.project-menu li').click(function () {
     $('.project-menu li').removeClass('active')
     $(this).addClass('active')
-  })
+  });
 
   //==============================
   //on-scroll
@@ -62,10 +68,12 @@ $(document).ready(function () {
     $("#btn1").addClass('hmm')
     $('#btn1').toggleClass('shrink')
   });
+
+
   $(".go-down").click(function () {
     $('html, body').animate({
       scrollTop: $("#About").offset().top
-    }, 2000, );
+    }, 2000);
   });
 
 
@@ -89,4 +97,6 @@ $(document).ready(function () {
       }
     }
   });
+
+
 });
